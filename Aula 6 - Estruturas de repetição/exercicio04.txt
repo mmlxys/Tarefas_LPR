@@ -1,0 +1,36 @@
+using System;
+
+class Exercicio5
+{
+    static void Main()
+    {
+        Console.WriteLine("Bem-vindo(a) Jedi! Digite suas horas de treinamento por dia: ");
+        int horasTreinamento = Convert.ToInt32(Console.ReadLine());
+        
+        int horasPorSemana = horasTreinamento * 5;
+        int horasPorMes = horasPorSemana * 9 / 2; // 9/2 = 4.5
+        int horasTotais = 0, dias = 0, semanas = 0, meses = 0;
+        
+        while (horasTotais < 1000)
+        {
+            horasTotais += horasPorSemana;
+            semanas++;
+
+            if (horasTotais >= 1000)
+                break;
+
+            if (semanas % 4 == 0) 
+            {
+                horasTotais += horasPorSemana / 2; 
+                meses++;
+            }
+        }
+
+        dias = semanas * 5; 
+
+        Console.WriteLine("\nAqui está seu cronograma, Jedi:");
+        Console.WriteLine("Total de horas de treinamento em uma semana: " + horasPorSemana);
+        Console.WriteLine("Total de horas de treinamento em um mês: " + horasPorMes);
+        Console.WriteLine("Para alcançar 1000 horas de treinamento são necessários " + dias + " dias, " + semanas + " semanas e " + meses + " meses!");
+    }
+}

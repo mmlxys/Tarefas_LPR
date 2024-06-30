@@ -1,0 +1,22 @@
+using System;
+
+class exericio4
+{
+    static void Main()
+    {
+        Console.WriteLine("Digite um número:");
+        int numero = Convert.ToInt32(Console.ReadLine());
+        
+        int quadrado = numero * numero;
+        int somaDigitos = 0;
+
+        while (quadrado != 0)
+        {
+            int digito = quadrado % 10; // o que ele está fazendo aqui é pegar o último digito dividindo por 10, porquê  se temos 123 % 10, o resultado é 3, porque 123 dividido por 10 é 12 com um resto de 3.
+            somaDigitos += digito;
+            quadrado /= 10;
+        }
+
+        Console.WriteLine("A soma dos dígitos do quadrado do número é: " + somaDigitos);
+    }
+}
