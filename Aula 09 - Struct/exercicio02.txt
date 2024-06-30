@@ -1,0 +1,91 @@
+#include <iostream>
+
+using namespace std;
+
+
+struct Livro {
+    string Titulo;
+    string Autor;
+    int AnoPublicacao;
+    int NumeroPaginas;
+    double Preco;
+    
+};
+
+int main() {
+    Livro livro1, livro2, livro3;
+    double precoTotal = 0;
+    int totalPaginas = 0;
+
+    // Inserir dados do livro 1
+    cout << "Insira os dados do livro 1:\n";
+
+    cout << "Titulo: ";
+    cin >> livro1.Titulo;
+
+    cout << "Autor: ";
+    cin >> livro1.Autor;
+
+    cout << "Ano de Publicacao: ";
+    cin >> livro1.AnoPublicacao;
+
+    cout << "Numero de Paginas: ";
+    cin >> livro1.NumeroPaginas;
+
+    cout << "Preco: ";
+    cin >> livro1.Preco;
+
+    precoTotal += livro1.Preco;
+    totalPaginas += livro1.NumeroPaginas;
+
+
+    cout << "Insira os dados do livro 2:\n";
+
+    cout << "Titulo: ";
+    cin >> livro2.Titulo;
+
+    cout << "Autor: ";
+    cin >> livro2.Autor;
+
+    cout << "Ano de Publicacao: ";
+    cin >> livro2.AnoPublicacao;
+
+    cout << "Numero de Paginas: ";
+    cin >> livro2.NumeroPaginas;
+
+    cout << "Preco: ";
+    cin >> livro2.Preco;
+
+    precoTotal += livro2.Preco;
+    totalPaginas += livro2.NumeroPaginas;
+
+
+    cout << "Insira os dados do livro 3:\n";
+
+    cout << "Titulo: ";
+    cin >> livro3.Titulo;
+
+    cout << "Autor: ";
+    cin >> livro3.Autor;
+
+    cout << "Ano de Publicacao: ";
+    cin >> livro3.AnoPublicacao;
+
+    cout << "Numero de Paginas: ";
+    cin >> livro3.NumeroPaginas;
+
+    cout << "Preco: ";
+    cin >> livro3.Preco;
+
+    precoTotal += livro3.Preco;
+    totalPaginas += livro3.NumeroPaginas;
+
+ 
+    double mediaPaginas = totalPaginas / 3;
+
+ 
+    cout << "\nO preco total dos livros e: " << precoTotal << endl;
+    cout << "A media de paginas dos livros e: " << mediaPaginas << endl;
+
+  
+}
