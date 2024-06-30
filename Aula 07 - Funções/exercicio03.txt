@@ -1,0 +1,42 @@
+void tarefa4() {
+    int numero;
+    cout << "Digite um número:";
+    cin >> numero;
+
+    int quadrado = numero * numero;
+    int somaDigitos = 0;
+
+    while (quadrado != 0) {
+        int digito = quadrado % 10;
+        somaDigitos += digito;
+        quadrado /= 10;
+    }
+
+    cout << "A soma dos dígitos do quadrado do número é: " << somaDigitos << endl;
+}
+
+int main() {
+    int escolha;
+    cout << "Escolha a tarefa que deseja visualizar:" << endl;
+    cout << "Tarefa 1 - Soma" << endl;
+    cout << "Tarefa 2 - Soma de números ímpares" << endl;
+    cout << "Tarefa 3 - Soma dos digitos e seu quadrado" << endl;
+
+    cin >> escolha;
+
+    switch (escolha) {
+        case 1:
+            tarefa1();
+            break;
+        case 2:
+            tarefa2();
+            break;
+        case 3:
+            tarefa4();
+            break;
+        default:
+            cout << "Numero invalido";
+    }
+
+    return 0;
+}

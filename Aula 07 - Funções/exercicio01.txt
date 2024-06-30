@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+void tarefa1() {
+    int quantidade, numero, soma = 0, contador = 0;
+
+    cout << "Digite a quantidade de números: ";
+    cin >> quantidade;
+
+    while (quantidade > 0) {
+        cout << "Digite um numero: ";
+        cin >> numero;
+
+        if (numero % 2 == 0) {
+            soma += numero;
+            contador++;
+        }
+
+        quantidade--;
+    }
+
+    if (contador == 0) {
+        cout << "Você não digitou numeros pares, tente novamente" << endl;
+    } else {
+        double media = soma / contador;
+        cout << "A média dos numeros pares é: " << media << endl;
+    }
+}
