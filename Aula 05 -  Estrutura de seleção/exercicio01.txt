@@ -1,0 +1,22 @@
+#include
+
+using namespace std;
+
+int main() {
+
+int numero;
+
+cout << "Digite um número inteiro: ";
+cin >> numero;
+
+if (numero % 2 == 0) {
+    
+    cout << "Par";
+    
+}
+else {
+    cout << "Impar";
+}
+
+return 0;
+}

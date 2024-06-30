@@ -1,0 +1,22 @@
+ using System; class exercicio3 { static void Main() {
+
+    int escolha;
+    
+    Console.WriteLine("Menu: Escolha sua classe");
+    Console.WriteLine("1 - Guerreira");
+    Console.WriteLine("2 - Mago");
+    Console.WriteLine("3 - Arqueira");
+    
+    Console.Write("Escolha sua classe (digite o número correspondente): ");
+    escolha = int.Parse(Console.ReadLine());
+    
+    if (escolha == 1) {
+        Console.WriteLine("Habilidades da Guerreira: Ataque Pesado, Defesa Total"); 
+    }
+    else if (escolha == 2) {
+        Console.WriteLine("Habilidades do Mago:Bola de Fogo, Escudo de Gelo");
+    } else if (escolha == 3) {
+        Console.WriteLine("Habilidades da Arqueira: Flecha Precisa, Disparo Triplo");
+    }
+}
+}
